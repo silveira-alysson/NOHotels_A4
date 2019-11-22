@@ -1,0 +1,28 @@
+﻿@model NOHotels_A4.Models.Lodges
+
+<h1>Parks</h1>
+<hr />
+
+@foreach (var item in Model.Data)
+{
+<div>
+    <h3>
+        @Html.DisplayFor(modelItem => item.BusinessName)
+    </h3>
+    <div>
+        @Html.DisplayFor(modelItem => item.Address)
+    </div>
+    <div>
+        @Html.DisplayFor(modelItem => item.BusinessType)
+    </div>
+        <div>
+            <h5>Directions: </h5>
+            @Html.DisplayFor(modelItem => item.Location)
+        </div>
+    </div>
+    <br />
+}
+
+<script>
+    alertDbSave(@ViewBag.dbSuccessComp);
+</script>
