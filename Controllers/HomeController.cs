@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using NOHotels_A4.Models;
 using NOHotels_A4.APIHandlerManager;
 
+
 namespace NOHotels_A4.Controllers
 {
 	public class HomeController : Controller
